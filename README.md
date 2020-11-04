@@ -2,7 +2,7 @@
 ```
     * Basic shell code loader. (Credit: https://ired.team)
 
-    * Uses subprocess to call MSFVenom, creating a reverese TCP payload with supplied LHOST and LPORT parameters, saving a C payload to a temporary file.
+    * Uses subprocess to call MSFVenom, creating a reverse TCP payload with supplied LHOST and LPORT parameters, saving C payload to a temporary file.
 
     * Loads temporary file, replacing standard variable names with random values of varying lengths, altering static signature of the executable.
 
