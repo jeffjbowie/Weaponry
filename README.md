@@ -1,3 +1,7 @@
+# Weaponry
+
+A collection of offensive code used for red team engagements. 
+
 ### ObfuscateMeterpeterReverseTcp.py
 ```
     * Basic shell code loader. (Credit: https://ired.team)
