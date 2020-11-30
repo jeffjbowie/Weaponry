@@ -20,9 +20,9 @@ A collection of offensive code used for red team engagements.
 ```
    * Writes Add-MpPreference -ExclusionExtension (".exe", ".dll") to a file in %TEMP%
    
-   * Uses SDCLT.exe to escalate privelegs and call script.
+   * Uses SDCLT.exe to escalate privileges and call above script.
    
-   * Once EXE &  DLLs are exlcuded, Meterpreter payload is downloaded + executed.
+   * Once EXE &  DLLs are excluded, Meterpreter payload is downloaded + executed.
    
    * Remove PS1 from %TEMP%
    
