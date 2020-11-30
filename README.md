@@ -15,3 +15,16 @@ A collection of offensive code used for red team engagements.
     TODO: Add in "junk" logic, more anti-debug.
 
 ```
+
+### ExclusionDrop.ps1
+```
+   * Writes Add-MpPreference -ExclusionExtension (".exe", ".dll") to a file in %TEMP%
+   
+   * Uses SDCLT.exe to escalate privelegs and call script.
+   
+   * Once EXE &  DLLs are exlcuded, Meterpreter payload is downloaded + executed.
+   
+   * Remove PS1 from %TEMP%
+   
+   * Restore SDCLT.exe functionality.
+   ```
