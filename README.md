@@ -28,3 +28,17 @@ A collection of offensive code used for red team engagements.
    
    * Restore SDCLT.exe functionality.
    ```
+
+### Canary.ps1
+```
+   * Grab Username + Domain from environment variables.
+   
+   * Get Local IP from WMI query.
+   
+   * Get External IP from API (ipconfig.me)
+   
+   * Send string over socket to defined EndPoint + Port.
+   
+   * Server: nc -lvpk <Port>
+   
+ ```
