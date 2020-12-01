@@ -10,10 +10,9 @@ Function Canary {
     Process {
 
         $userDomain = $env:username + "\" + $env:userdomain
-        $localIp = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.Ipaddress.length -gt 1}
         $externalIp = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
 
-        $Message = '[{0}] {1} Connected. Local IP: {2}' -f $externalIp, $userDomain, $localIp.ipaddress[0]
+        $Message = '[{0}] {1} Connected.' -f $externalIp, $userDomain
 
         $IP = [System.Net.Dns]::GetHostAddresses($EndPoint) 
         $Address = [System.Net.IPAddress]::Parse($IP) 
