@@ -10,7 +10,7 @@ Function Canary {
     Process {
 
         $userDomain = $env:userdomain + "\" + $env:username
-        $externalIp = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
+        $externalIp = (Invoke-WebRequest -uri "http://ifconfig.me/ip" -UseBasicParsing).Content
 
         $Message = '[{0}] {1} Connected.' -f $externalIp, $userDomain
 
