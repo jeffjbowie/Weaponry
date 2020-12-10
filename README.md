@@ -29,16 +29,22 @@ A collection of offensive code used for red team engagements.
    * Restore SDCLT.exe functionality.
    ```
 
-### Canary.ps1
+### TelegramCanary.ps1
 ```
-   * Grab Username + Domain from environment variables.
+   * Grab Username + Domain 
    
-   * Get Local IP from WMI query.
+   * Grab OS Name, Build #, Processor Architecture
    
-   * Get External IP from API (ipconfig.me)
+   * Grab Local IP 
    
-   * Send string over socket to defined EndPoint + Port.
+   * Grab External IP from API (ipconfig.me)
    
-   * Server: nc -lvpk <Port>
+   * Geolocate external IP from API (ip-api.com)
+   
+   * Grab user language
+   
+   * Builds a hashtable of all above values, and encodes to JSON.
+   
+   * Sends JSON to Telegram API with pre-configured Token + Message ID.
    
  ```
