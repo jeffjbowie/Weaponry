@@ -57,14 +57,13 @@ A collection of offensive code used for red team engagements.
    
       * Create a random file in %TEMP% appended with ".vbs"
    
-      * Write VBScript payload , which checks an HTTP URL for Batch/PowerShell commands. 
+      * Write VBScript payload to %TEMP%/<random_name>.vbs, which checks an HTTP URL for Batch/PowerShell commands. 
    
       * Generates a list of Scheduled Tasks.
       
       * Identifies & duplicates the name of an existing Scheduled Task.
       
-      * Creates a scheduled task with modified existing Task Name, to run every 10 minutes.
+      * Creates a scheduled task with modified existing Task Name, executing %TEMP%/<random_name>.vbs, running every 10 minutes.
       
-      * Each time the task is ran, VBScript checks C2 URL for commands to run & executes.
  ```
 
