@@ -63,7 +63,7 @@ A collection of offensive code used for red team engagements.
       
       * Identifies & duplicates the name of an existing Scheduled Task.
       
-      * Creates a scheduled task with modified existing Task Name, executing %TEMP%/<random_name>.vbs, running every 10 minutes.
+      * Creates a scheduled task with modified existing Task Name, executing %TEMP%/<random_name>.vbs every 10 minutes.
       
  ```
 
