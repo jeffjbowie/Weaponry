@@ -57,7 +57,10 @@ A collection of offensive code used for red team engagements.
    
       * Create a random file in %TEMP% appended with ".vbs"
    
-      * Write VBScript payload to %TEMP%/<random_name>.vbs, which checks an HTTP URL for Batch/PowerShell commands. 
+      * Write VBScript payload to %TEMP%/<random_name>.vbs, which checks an HTTP URL for a Batch/PowerShell command.
+      
+      * Command is pre-pended with either bat: or ps1:
+         ps1:Invoke-Item c:\windows\system32\calc.exe 
    
       * Generates a list of Scheduled Tasks.
       
