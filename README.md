@@ -2,6 +2,28 @@
 
 A collection of offensive code used for red team engagements. 
 
+### DocumentDupe.cs
+```
+   C# .NET Executable which exfiltrates system information via publicy-accessible HTTP request inspectors.
+   Writes a Word document (Base64-Encoded String) in %TEMP% , and opens via System.Diagnostics.Process.Start
+   
+  * Use Resource Hacker (http://www.angusj.com/resourcehacker/) to extract the .ico from WINWORD.exe
+  
+  * Create a new C# Project with Visual Studio. Set project's "Output type" to "Windows Application"
+  
+  * Under "Resources" in the project's properties, select the icon extracted from WINWORD.exe
+  
+  * Create a Word document and encode with Base64. (https://base64.guru/converter/encode/file)
+  
+  * Update variable "doc_b64" in DocumentDupe.cs with Base64 string.
+  
+  * Update second argument of postdata() with a string containing the URL of a request debugging site. Make sure to check "Make Private" (hookbin.com).
+  
+  * Compile the Release build of your project for the appropriate architecture.
+  
+  * Rename .exe in bin/Release to "<Lure_Name>.docx.exe"
+
+```
 
 ### OEF.ps1
 ```
