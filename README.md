@@ -2,6 +2,12 @@
 
 A collection of offensive code used for red team engagements. 
 
+
+### LOLCredPhish.ps1
+```
+   * Prompt user to "authenticate" with a custom message.
+   * Send captured plain-text to a Telegram account.
+```   
 ### DocumentDupe.cs
 ```
    C# .NET Executable which exfiltrates system information via publicy-accessible HTTP request inspectors.
