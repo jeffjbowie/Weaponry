@@ -8,7 +8,7 @@ A collection of offensive code used for red team engagements.
 
   * Start new Outlook instance via COM object.
   
-  * Create a new messages, with a Subject of "DOMAIN\USERNAME".
+  * Create a new message, with a Subject of "DOMAIN\USERNAME".
   
   * Scan %userprofile%\Documents for file names containing : "password", "login", "bitcoin", and "account".
   
